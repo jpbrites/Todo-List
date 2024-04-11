@@ -1,4 +1,3 @@
-/* task.css */
 .task-container {
     
     background-color: white;
@@ -10,10 +9,9 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    transition: box-shadow 0.3s; /* Adiciona uma transição suave ao box-shadow */
+    transition: box-shadow 0.3s; 
     border-radius: 20px;
-    /* Adiciona box shadow */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Define a sombra com um leve desfoque */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 .conj-info-task{
     display: flex;
@@ -33,7 +31,7 @@
     cursor: pointer;
 }
 .task-container:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Altera a sombra ao passar o mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); 
 }
 
 .title-task{

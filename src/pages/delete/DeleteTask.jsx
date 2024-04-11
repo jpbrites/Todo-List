@@ -1,4 +1,3 @@
-// DeleteTask.js
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './deletetask.css';
@@ -35,7 +34,7 @@ function DeleteTask() {
             if (response.ok) {
                 console.log('Tarefa deletada com sucesso!');
                 setSuccessMessage('Dados excluídos com sucesso!');
-                window.location.href = '/my_tasks'; // Use window.location.href para navegar para a página de listagem de tarefas
+                window.location.href = '/my_tasks'; 
 
             } else {
                 console.error('Erro ao deletar a tarefa.');

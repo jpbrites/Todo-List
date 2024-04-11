@@ -1,4 +1,3 @@
-// Snackbar.js
 import React, { useState, useEffect } from 'react';
 import './snackbar.css';
 
@@ -10,7 +9,7 @@ function Snackbar({ message, isSuccess }) {
             setIsVisible(true);
             setTimeout(() => {
                 setIsVisible(false);
-            }, 3000); // Oculta a snackbar após 3 segundos
+            }, 3000); 
         }
     }, [message]);
 

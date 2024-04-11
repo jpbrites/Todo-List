@@ -4,11 +4,6 @@ import Fundo from '../../assets/fundo.jpg';
 import { Link } from 'react-router-dom';
 
 function Home() {
-    const [tasks, setTasks] = useState([]);
-
-    const handleAddTask = () => {
-      // Aqui você pode adicionar a lógica para adicionar uma nova tarefa à lista de tarefas
-    };
   return (
     <div className="container">
       <img src={Fundo} alt="Welcome" className="welcome-image" />

@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import Snackbar from '../../components/snackbar/Snackbar';
 
 function UpdateTask() {
-    const { id } = useParams(); // Use useParams para acessar parâmetros da URL
+    const { id } = useParams(); 
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
     const [status, setStatus] = useState('');
@@ -17,14 +17,12 @@ function UpdateTask() {
     const [errorMessage, setErrorMessage] = useState('');
 
     useEffect(() => {
-        // Simulação de busca de dados da tarefa a ser atualizada
-        fetchTaskData(id); // Use o ID da tarefa para buscar os dados
+        fetchTaskData(id); 
 
-        // Função para buscar os dados da tarefa
         async function fetchTaskData(taskId) {
             console.log('id: '+taskId)
             try {
-                const response = await fetch(`http://127.0.0.1:8000/api/list/${taskId}`); // Substitua pela sua rota de API para buscar os detalhes da tarefa
+                const response = await fetch(`http://127.0.0.1:8000/api/list/${taskId}`); 
                 if (!response.ok) {
                     throw new Error('Erro ao buscar os dados da tarefa');
                 }
@@ -32,13 +30,11 @@ function UpdateTask() {
                 setTaskData(data);
             } catch (error) {
                 console.error('Erro ao buscar os dados da tarefa:', error);
-                // Lide com o erro de busca aqui
             }
         }
-    }, [id]); // Adicione id como dependência para refetching quando o ID mudar
+    }, [id]); 
 
     useEffect(() => {
-        // Preencher os campos de entrada com os dados da tarefa
         if (taskData) {
             setTitle(taskData.title);
             setDescription(taskData.description);
@@ -49,7 +45,6 @@ function UpdateTask() {
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        // Validação dos campos
         let isValid = true;
         if (!title.trim()) {
             setTitleError('Campo obrigatório');
@@ -74,9 +69,9 @@ function UpdateTask() {
             console.log('Dados a serem atualizados:', { title, description, status });
 
             try {
-                const taskId = id; // Obter o ID da tarefa da URL
+                const taskId = id;
                 const response = await fetch(`http://127.0.0.1:8000/api/update/${taskId}`, {
-                    method: 'PUT', // Use o método PUT para atualização
+                    method: 'PUT', 
                     headers: {
                         'Content-Type': 'application/json'
                     },

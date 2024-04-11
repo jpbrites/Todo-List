@@ -1,4 +1,3 @@
-// MyTasks.js
 import React, { useState, useEffect } from 'react';
 
 import './mytasks.css';
@@ -37,7 +36,6 @@ function MyTasks() {
         return <div>Erro: {error}</div>;
     }
 
-    // Agrupar tarefas por status
     const groupedTasks = tasks.reduce((grouped, task) => {
         if (!grouped[task.status]) {
             grouped[task.status] = [];
