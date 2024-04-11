@@ -1,0 +1,46 @@
+/* task.css */
+.task-container {
+    
+    background-color: white;
+    width: auto;
+    height: auto;
+    border: none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    transition: box-shadow 0.3s; /* Adiciona uma transição suave ao box-shadow */
+    border-radius: 20px;
+    /* Adiciona box shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Define a sombra com um leve desfoque */
+}
+.conj-info-task{
+    display: flex;
+    flex-direction: column;
+}
+
+.conj-icons-task{
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.edit{
+    margin-right: 15px;
+}
+.edit, .delete{
+    cursor: pointer;
+}
+.task-container:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Altera a sombra ao passar o mouse */
+}
+
+.title-task{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.title-description{
+    font-size: 15px;
+}

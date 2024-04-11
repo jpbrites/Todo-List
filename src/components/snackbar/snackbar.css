@@ -1,0 +1,25 @@
+/* snackbar.css */
+.snackbar {
+    position: fixed;
+    top: 20px; /* Altere essa propriedade para ajustar a distância do topo */
+    right: 20px; /* Altere essa propriedade para ajustar a distância da direita */
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+.snackbar.show {
+    opacity: 1;
+}
+
+.snackbar.success {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.snackbar.error {
+    background-color: #f44336;
+    color: #fff;
+}
