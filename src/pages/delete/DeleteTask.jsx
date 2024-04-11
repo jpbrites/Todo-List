@@ -55,7 +55,7 @@ function DeleteTask() {
             {task && (
                 <div>
                     <div className='form-group'>
-                        <label>Título:</label>
+                        <label>Títul:</label>
                         <input type="text" value={task.title} disabled />
                     </div>
                     <div className='form-group'>
