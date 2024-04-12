@@ -1,0 +1,37 @@
+
+
+
+
+.button-buscar{
+    margin-left: 20px;
+}
+
+
+
+.task-details{
+    max-width: 350px;
+    margin-top: 2rem;
+    background: linear-gradient(to bottom, #A77DCD, #F3B9C5);
+    border: none;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    transition: box-shadow 0.3s; 
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.task-details .title{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.task-details .description, .task-details .status, .task-details .created-at{
+    font-size: 18px;
+}
+
+.task-details span{
+    font-size: 18px;
+    padding-bottom: 10px;
+}

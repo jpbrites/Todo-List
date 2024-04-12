@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './task.css';
 import { MdEdit, MdDelete } from 'react-icons/md';
 
-function Task({ title, description, id, status }) {
+function Task({ title, description, id, status, time }) {
     console.log(id)
     return (
         <div className="task-container">

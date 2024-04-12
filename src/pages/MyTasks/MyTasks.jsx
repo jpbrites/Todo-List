@@ -57,7 +57,7 @@ function MyTasks() {
                             {groupedTasks['Não Iniciado'] &&
                                 groupedTasks['Não Iniciado'].map(task => (
                                     <li key={task.id}>
-                                        <Task title={task.title} description={task.description} id={task.id} status={task.status} />
+                                        <Task title={task.title} description={task.description} id={task.id} status={task.status} time={task.created_at} />
                                     </li>
                                 ))}
                         </ul>
@@ -68,7 +68,7 @@ function MyTasks() {
                             {groupedTasks['Em Andamento'] &&
                                 groupedTasks['Em Andamento'].map(task => (
                                     <li key={task.id}>
-                                        <Task title={task.title} description={task.description} id={task.id} status={task.status} />
+                                        <Task title={task.title} description={task.description} id={task.id} status={task.status} time={task.created_at} />
                                     </li>
                                 ))}
                         </ul>
@@ -79,7 +79,7 @@ function MyTasks() {
                             {groupedTasks['Concluído'] &&
                                 groupedTasks['Concluído'].map(task => (
                                     <li key={task.id}>
-                                        <Task title={task.title} description={task.description} id={task.id} status={task.status} />
+                                        <Task title={task.title} description={task.description} id={task.id} status={task.status} time={task.created_at} />
                                     </li>
                                 ))}
                         </ul>

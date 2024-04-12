@@ -13,12 +13,12 @@
     overflow: auto;
     flex: 1;
     margin-top: 20px;
-    margin-right: 100px;
+    margin-right: 50px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 30px;
     max-height: 900px;
-    min-width: 220px;
+    min-width: 270px;
 }
 
 .task-column:last-child {
